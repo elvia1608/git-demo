@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="C:\Users\HP\Documents\Web Dev\jquery.js">
+
+        </script>
+        <title>JQuery Example</title>
+        </head>
+        <body>
+            <div id="div1">Hi....This is Div1</div>
+            <div id="div2">This is div2.....</div>
+            <p>This is paragraph 1.</p>
+            <p>This is paragraph 2.</p>
+            <ul>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>JQuery</li>
+                <li>JS</li>
+                <li>Jax</li>
+                <li>DOM</li>
+            </ul>
+            <table border="1">
+                <tr><td>Row 0</td></tr>
+                <tr><td>Row 1</td></tr>
+                <tr><td>Row 2</td></tr>
+                <tr><td>Row 3</td></tr>
+                <tr><td>Row 4</td></tr>
+                <tr><td>Row 5</td></tr>
+              </table><br>
+              <form action="">
+                <label>Name:</label>
+                <input type="text" name="user" ><br><br>
+                <label>Password : </label> 
+                <input type="password" name="password"><br><br>
+                <label>Male : </label>
+                <input type="radio" name="gender" value="m"><br>
+                <label>Female : </label>
+                <input type="radio" name="gender" value="f"><br><br>
+                Maths : <input type="checkbox" name="subject" value="maths"><br>
+                Physics : <input type="checkbox" name="subject" value="physics"><br>
+                Chemistry : <input type="checkbox" name="subject" value="chemistry"><br><br>
+                <input type="submit"><br><br>
+                <input type="reset" value="Reset"><br>
+                Image : <input type="image" src="C:\Users\HP\Documents\Web Dev\images\logo.png" width="50" height="50"><br><br>
+                File: <input type="file" name="myfile"><br><br>
+                <button type="button">Button</button>
+                </form>
+              
+            <script>
+                //$('#div1').hide();
+                $('#div2').hide();
+                $( "p:first" ).css( { background: "#ccc", color: "blue" });
+                $( "li:last" ).css( "background-color", "#bbf" );
+                $( "li:first" ).css( "background-color", "teal" );
+                $( "tr:odd" ).css( "background-color", "pink" );
+                $( "tr:even" ).css( "background-color", "gray" );
+                $( "li:gt(3)" ).css( "backgroundColor", "yellow" );
+                $( "li:lt(3)" ).css( "backgroundColor", "green" );
+                $( "li:eq(3)" ).css( "backgroundColor", "pink" );
+                $(":text").css("background-color", "powderblue");
+                $(":password").css("background-color", "blue");
+                $(":radio").wrap("<span style='background-color:purple'>");
+                $(":checkbox").wrap("<span style='background-color:teal'>");
+                $(":submit").css("background-color", "orange");
+                $(":reset").css("background-color", "yellow");
+                $(":image").wrap("<span style='background-color:black'>");
+                $(":file").css("background-color", "lightgreen");
+                $(":button").css("background-color", "pink");
+                
+            </script>
+        </body>
+        </html>
+        
